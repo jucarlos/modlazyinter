@@ -1,27 +1,25 @@
-# Modlazinter
+# Modularizando una aplicación.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.1.1.
 
-## Development server
+1. Crear carpetas separadas.
+2. Crear un módulo por carpeta.
+``` ng g m carpeta/nombre ```
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+3. Creado componentes y servicios
 
-## Code scaffolding
+4. Crear las rutas de ese módulo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+Creando el módulo y el fichero de rutas
+ng g m carpeta/nombre --routing
 
-## Build
+ng g m usuarios --routing
+ng g c usuarios/pages/login
+ng g c usuarios/pages/registro
+ng g c usuarios/pages/perfil
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+Lo mismo con proveedores.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+1. Crear el módulo y el fichero de rutas
+2. Crear los 3 componentes tipo página
+3. Actualizar el fichero de rutas del módulo proveedores
+4. Actualizr el fichero de rutas principal con lazy load.
